@@ -1,0 +1,78 @@
+/* .ContentContainer {
+  position: relative;
+  height: 700px;
+}
+.ContentFeatured {
+  position: absolute;
+  bottom: 0;
+}
+.Motion > div {
+  width: 100%;
+}
+
+.ContentContainer > div {
+  text-align: -webkit-right;
+}
+.description {
+  width: 90%;
+} */
+@media only screen and (min-width: 450px) {
+  .ContentContainer {
+    height: 800px;
+  }
+  .description {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 760px) {
+  .ContentContainer {
+    position: relative;
+  }
+  .ContentFeatured {
+    position: absolute;
+    bottom: 0;
+  }
+  .Motion > div {
+    width: 100%;
+  }
+
+  .ContentContainer > div {
+    text-align: -webkit-right;
+  }
+  .description {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .Container {
+    padding: 20px 0px;
+    min-height: 600px;
+  }
+  .ContentContainer {
+    display: flex;
+    padding: 20px 0px;
+  }
+  .ContentContainer:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+  .ContentLarge {
+    overflow: hidden;
+    height: 450px;
+  }
+  .ContentFeatured {
+    padding-top: 60px;
+    min-height: 600px;
+    transform: translateX(-80px);
+    position: relative;
+  }
+
+  .ContentContainer:nth-of-type(even) > .ContentFeatured:nth-of-type(even) {
+    transform: translateX(80px);
+  }
+  .description {
+    padding: 10px 20px;
+  }
+  .Motion > div {
+    display: block !important;
+  }
+}

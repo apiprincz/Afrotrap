@@ -1,0 +1,102 @@
+.Headline {
+  background: #ee9292;
+  padding: 10px;
+  min-height: 100vh;
+  position: relative;
+}
+.Headline:before {
+  content: "";
+  width: 240px;
+  height: 240px;
+  display: block;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.1;
+  position: absolute;
+  right: 0;
+  top: -100px;
+}
+.Headline:after {
+  content: "";
+  width: 240px;
+  height: 240px;
+  display: block;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.1;
+  position: absolute;
+  right: 26%;
+  top: 4%;
+}
+.para {
+  color: #fff;
+  font-size: 10px;
+  padding-top: 20px 0px;
+  display: none;
+}
+.mid {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  padding-top: 40px;
+}
+.hero {
+  font-size: 30px;
+  line-height: 60px;
+}
+.BtnBuy {
+  white-space: nowrap;
+}
+@media only screen and (min-width: 1000px) {
+  .Headline {
+    background: #ee9292;
+    padding: 10px 40px 40px 40px;
+    min-height: 100vh;
+    position: relative;
+  }
+  .Headline:before {
+    content: "";
+    width: 240px;
+    height: 240px;
+    display: block;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.1;
+    position: absolute;
+    right: 0;
+    top: -100px;
+  }
+  .Headline:after {
+    content: "";
+    width: 240px;
+    height: 240px;
+    display: block;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.1;
+    position: absolute;
+    right: 26%;
+    top: 4%;
+  }
+  .para {
+    color: #fff;
+    font-size: 1.6rem;
+    display: block;
+  }
+  .mid {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    padding-top: 100px;
+  }
+  .hero {
+    font-size: 4rem;
+  }
+  .BtnBuy {
+    white-space: nowrap;
+    font-size: 30px;
+    padding: 10px 30px;
+  }
+}

@@ -1,0 +1,19 @@
+.Footer {
+  background: black;
+  padding: 20px 0px;
+  color: #fff;
+}
+.Social > div {
+  width: 200px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .Footer {
+    background: black;
+    padding: 20px 0px;
+    color: #fff;
+  }
+  .Social > div {
+    width: 200px;
+  }
+}
