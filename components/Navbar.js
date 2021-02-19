@@ -1,3 +1,5 @@
+import React from "react";
+
 import Link from "next/link";
 import SocialHandle from "./SocialHandle";
 import Styles from "../styles/Navbar.module.css";
