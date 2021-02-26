@@ -1,12 +1,11 @@
 import React from "react";
 import SocialHandle from "./SocialHandle";
-import Logo from "./Logo";
 import Styles from "../styles/Footer.module.css";
 
 const Footer = () => {
   return (
     <div className={`text-center ${Styles.Footer}`}>
-      <Logo />
+      <img src="/Afrotrap.png" className={Styles.Logo} alt="Logo"></img>
       <div>
         <span>Suite 8 Forest Lane, Nigeria, Africa</span>
         &nbsp; &nbsp; &nbsp;
