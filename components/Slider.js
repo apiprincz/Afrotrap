@@ -1,52 +1,107 @@
 import React from "react";
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+  EffectCoverflow,
+} from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 import Image from "next/image";
 import Styles from "../styles/Slider.module.css";
 
+// install Swiper modules
+SwiperCore.use([Navigation, Pagination, A11y, Autoplay, EffectCoverflow]);
+
 const Slider = () => {
-  const images = [
-    ["AfroSlide1a", "AfroSlide2a"],
-    ["AfroSlide2b", "AfroSlide1b"],
-  ];
-
-  //   let line = useRef();
-  //   const myTween = new TweenMax({ paused: true });
-
-  //   useEffect(() => {
-  //     animate();
-  //   }, []);
-  //   const animate = () => {
-  //     const gsap = new gsap();
-  //     setTimeout(() => {
-  //       gsap
-  //         .to(line.current, 0.5, { x: 100 })
-  //         .to(line.current, 0.5, { y: 100 })
-  //         .play();
-  //     }, 10);
-  //   };
-
   return (
-    <>
-      <div className={`row ${Styles.Slider}`}>
-        <div className={` ${Styles.SliderContainer} `}>
-          {images.map((image, index) => {
-            return (
-              <div className={Styles.SliderContent}>
-                <Image
-                  src={`/${image[0]}.png`}
-                  alt={image[0]}
-                  width={index === 0 ? "300" : "500"}
-                  height={index === 0 ? "300" : "500"}
-                  key={index}
-                  className="col-md-12"
-                />
-                ;
-              </div>
-            );
-          })}
-        </div>
-      </div>
-    </>
+    <Swiper
+      spaceBetween={50}
+      navigation
+      pagination={{ clickable: true }}
+      loop={{ clickable: true }}
+      tag="section"
+      effect="coverflow"
+      breakpoints={{
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+      }}
+      wrappedTag="ul"
+      // autoplay={{
+      //   delay: 5000,
+      //   disableOnInteraction: false,
+      // }}
+      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => console.log("slide change")}
+    >
+      <SwiperSlide
+        style={{
+          backgroundImage: "url(/AfroSlide1a.png)",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "contain",
+        }}
+      ></SwiperSlide>
+      <SwiperSlide
+        style={{
+          backgroundImage: "url(/AfroSlide2b.png)",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "contain",
+        }}
+      ></SwiperSlide>
+      <SwiperSlide
+        style={{
+          backgroundImage: "url(/AfroSlide1b.png)",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "contain",
+        }}
+      ></SwiperSlide>
+      <SwiperSlide
+        style={{
+          backgroundImage: "url(/AfroSlide2a.png)",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "contain",
+        }}
+      ></SwiperSlide>
+      <SwiperSlide
+        style={{
+          backgroundImage: "url(/AfroSlide1a.png)",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundSize: "contain",
+        }}
+      >
+        {/* <img src="/AfroSlide1a.png" alt="BannerOne" /> */}
+      </SwiperSlide>
+      {/* <SwiperSlide>
+        <img src="/AfroSlide1a.png" alt="BannerTwo" />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src="/AfroSlide1a.png" alt="BannerThree" />
+      </SwiperSlide>
+      <SwiperSlide>
+        <img src="/AfroSlide1a.png" alt="BannerFour" />
+      </SwiperSlide> */}
+    </Swiper>
   );
 };
 

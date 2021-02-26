@@ -19,7 +19,9 @@ export const BtnExclusive = () => {
   return (
     <>
       <Link href="/collections">
-        <button className=" btn btn-outline-dark btn-lg fs-1  m-auto">
+        <button
+          className={`btn btn-outline-dark btn-lg fs-1  m-auto ${Styles.btn_exclusive}`}
+        >
           Exclusive
         </button>
       </Link>

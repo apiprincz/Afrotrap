@@ -1,23 +1,38 @@
 import React from "react";
 import Link from "next/link";
 import Styles from "../styles/Navbar.module.css";
+import { library, icon } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+library.add(fab, faCartPlus);
+const cart = icon({ prefix: "fas", iconName: "cart" });
 
 const SocialHandle = () => {
   return (
-    <div className={`flex-fill col-md-4 d-flex mx-auto ${Styles.Social}`}>
+    <>
       <Link href="#">
-        <i className={`fab fa-facebook-f ${Styles.fab}`}></i>
+        <a className={Styles.Nav_social} target="_blank" href="#">
+          <FontAwesomeIcon icon={["fab", "facebook"]} className={Styles.Svg} />
+        </a>
       </Link>
       <Link href="#">
-        <i class={`fab fa-instagram ${Styles.fab}`}></i>
+        <a className={Styles.Nav_social} target="_blank" href="#">
+          <FontAwesomeIcon icon={["fab", "instagram"]} className={Styles.Svg} />
+        </a>
       </Link>
       <Link href="#">
-        <i class={`fab fa-twitter ${Styles.fab}`}></i>
+        <a className={Styles.Nav_social} target="_blank" href="#">
+          <FontAwesomeIcon icon={["fab", "twitter"]} className={Styles.Svg} />
+        </a>
       </Link>
       <Link href="#">
-        <i class={`fab fa-linkedin-in ${Styles.fab}`}></i>
+        <a className={Styles.Nav_social} target="_blank" href="#">
+          <FontAwesomeIcon icon={["fab", "linkedin"]} className={Styles.Svg} />
+        </a>
       </Link>
-    </div>
+    </>
   );
 };
 

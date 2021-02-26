@@ -1,11 +1,8 @@
 import React from "react";
+import IndexLayout from "../Layouts/index";
 
 const collections = () => {
-  return (
-    <div className="mx-auto" style={{ fontSize: "30px" }}>
-      All Collections
-    </div>
-  );
+  return <IndexLayout></IndexLayout>;
 };
 
 export default collections;

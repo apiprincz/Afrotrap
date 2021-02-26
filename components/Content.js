@@ -8,7 +8,7 @@ const Content = () => {
   const images = [
     {
       large: "hoodiestylebrown.png",
-      featured: "hoodiestylered.png",
+      featured: "hoodiestyleredhmm.png",
       description:
         "Afrotrap red &amp; black with white color hoodie cap. Made with 100% cotton, high quality stitching",
       slug: "define your true style",
@@ -25,7 +25,7 @@ const Content = () => {
     <div className={Styles.Container}>
       {images.map((image, index) => {
         return (
-          <div className={Styles.ContentContainer}>
+          <div key={index} className={Styles.ContentContainer}>
             <div style={{ display: "block" }}>
               <div className={Styles.ContentLarge}>
                 <motion.div

@@ -14,3 +14,47 @@ a {
 * {
   box-sizing: border-box;
 }
+.row {
+  margin: 0;
+}
+
+.active {
+  color: #0000006e;
+}
+li:hover {
+  color: white;
+  background: #f0c8c8;
+}
+li > a:hover {
+  color: #ffffff;
+}
+.list-group {
+  width: 200px;
+}
+
+.badge {
+  padding: 0;
+}
+/* // Import Swiper styles */
+.swiper-container,
+.swiper-wrapper {
+  height: 100%;
+}
+
+.swiper-wrapper > div {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* width: 100%; */
+}
+@media only screen and (max-width: 762px) {
+  .main_container {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .list-group {
+    width: 154px;
+  }
+}

@@ -1,5 +1,8 @@
 .Navbar {
-  padding: 10px 120px 10px 10px;
+  width: 100%;
+}
+.Nav {
+  padding: 10px 20px 10px 10px;
   background: #f0c8c8;
   margin: 0;
 }
@@ -12,9 +15,82 @@
 
 .Social {
 }
+.NavLogo {
+  background: transparent;
+}
+.Navcol {
+  background: #ee9292;
+}
+.Nav_social {
+  display: flex;
+}
 
+.Svg {
+  color: #ffffff;
+  width: 20px;
+}
+.Svg:hover {
+  color: #d48181;
+}
+.SvgCart {
+  width: 30px;
+  color: #d48181;
+}
+.SvgCart:hover {
+  color: #ffffff;
+}
+.cartIcon {
+  position: relative;
+  display: flex;
+}
+.cartCount {
+  position: absolute;
+  right: -8px;
+  top: 25%;
+  background: green;
+  color: white;
+  padding: 0px 8px;
+  width: 13px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+}
+.NavLink {
+  position: relative;
+}
+.NavLinkLink:hover {
+  color: #0000006e;
+}
+.NavLinkContent {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+}
+.NavLinkContentShow {
+  position: absolute;
+  opacity: 1;
+  z-index: 200;
+  width: 200px;
+  height: 100px;
+  background: #ffff;
+}
+.innerContainer {
+  justify-content: space-between;
+}
+.NavLinkExt {
+  /* height: 100%; */
+  width: 100%;
+}
+.NavLinkLink {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+}
 @media only screen and (min-width: 1000px) {
-  .Navbar {
+  .Nav {
     padding: 10px 120px 10px 10px;
     background: #f0c8c8;
     margin: 0;
@@ -23,5 +99,77 @@
     color: #fff;
     cursor: pointer;
     font-size: 24px;
+  }
+}
+@media only screen and (min-width: 760px) {
+  .Nav {
+    padding: 10px 120px 0px 10px;
+    background: #f0c8c8;
+    margin: 0;
+  }
+  .fab {
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  .NavLogo {
+    padding: 10px 0px 0px 40px;
+  }
+  .innerContainer {
+    height: 100%;
+    align-items: center;
+  }
+  .NavLinkExt {
+    height: 100%;
+    width: auto;
+  }
+
+  .Container {
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .innerContainer {
+    padding: 0px 20px;
+  }
+  .logo {
+    width: 100px;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .NavLinkExt {
+    width: 85%;
+    position: absolute;
+    top: 62px;
+    left: 37px;
+    background: #e1c5c5c7;
+    z-index: 200;
+  }
+  .Navbar {
+    position: fixed;
+    z-index: 200;
+    /* flex-wrap: nowrap; */
+  }
+
+  .Nav {
+    flex-wrap: nowrap;
+  }
+  .Container {
+    height: 100%;
+    flex-wrap: nowrap;
+  }
+  .toggler {
+    position: absolute;
+    left: 50%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .logo {
+    width: 70px;
+  }
+  .NavLinkExt {
+    width: 77%;
+    top: 47px;
+    left: 37px;
   }
 }

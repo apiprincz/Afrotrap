@@ -15,7 +15,10 @@ const Footer = () => {
       &nbsp;
       <p>Afrotrap@gmail.com</p>
       <p style={{ color: "red" }}>Socialize with us</p>
-      <div className={Styles.Social}>
+      <div
+        className="d-flex justify-content-between mx-auto"
+        style={{ width: "150px" }}
+      >
         <SocialHandle />
       </div>
     </div>

@@ -1,0 +1,13 @@
+.Container {
+  height: calc(100vh - 150px);
+}
+@media only screen and (max-width: 760px) {
+  .Container {
+    height: 70vh;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .Container {
+    height: 50vh;
+  }
+}

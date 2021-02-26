@@ -4,6 +4,7 @@ import IndexLayout from "../Layouts";
 import Headline from "../components/Headline";
 import Content from "../components/Content";
 import Footer from "../components/Footer";
+import Container from "../components/Container";
 
 export default function Home() {
   return (
@@ -13,10 +14,9 @@ export default function Home() {
         <link rel="icon" href="" />
       </Head>
       <IndexLayout>
-        <Headline></Headline>
+        <Container></Container>
+        <Content></Content>
       </IndexLayout>
-      <Content></Content>
-      <Footer />
     </>
   );
 }
