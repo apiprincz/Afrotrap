@@ -1,10 +1,10 @@
 import React from "react";
-import Image from "next/image";
+// import Image from "next/image";
 
 const Logo = () => {
   return (
     <div>
-      <Image
+      <Img
         src="/afrotrap.png"
         alt="Picture of the author"
         width={200}
