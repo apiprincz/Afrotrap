@@ -172,7 +172,7 @@ export const NavbarMobile = () => {
       >
         <div className={`container-fluid ${Styles.Container}`}>
           <div className={Styles.logo}>
-            <Logo />
+            <img src="/Afrotrap.png" alt="Logo"></img>
           </div>
 
           <button

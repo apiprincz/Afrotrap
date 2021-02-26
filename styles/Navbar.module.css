@@ -116,9 +116,7 @@
   .NavLogo {
     padding: 10px 0px 0px 40px;
   }
-  .NavLogo img {
-    width: 36%;
-  }
+
   .innerContainer {
     height: 100%;
     align-items: center;
@@ -138,6 +136,9 @@
   }
   .logo {
     width: 100px;
+  }
+  .logo img {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 560px) {
