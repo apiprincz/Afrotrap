@@ -10,6 +10,10 @@ import Footer from "../components/Footer";
 export default function IndexLayout({ children }) {
   const { width } = useWindowResize();
   const breakpoint = 760;
+  const bar = () => {
+    console.log(width);
+  };
+  bar();
 
   return (
     <div className={`${Styles.Layout}`}>
@@ -30,6 +34,7 @@ export default function IndexLayout({ children }) {
             style={{ flexDirection: "column", width: "100%" }}
           >
             {width < breakpoint ? <NavbarMobile /> : <Navbar />}
+
             {children}
             <Footer />
           </div>

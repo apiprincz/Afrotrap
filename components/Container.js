@@ -10,7 +10,7 @@ const Container = () => {
 
   return (
     <div className={`d-flex ${Styles.Container}`}>
-      {width > breakpoint ? <Headline /> : ""}
+      <Headline />
       <Banner />
     </div>
   );

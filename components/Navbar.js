@@ -158,7 +158,9 @@ export const NavbarMobile = () => {
   };
 
   return (
-    <div className={`row d-flex align-items-flex-start ${Styles.Navbar}`}>
+    <div
+      className={`row d-flex align-items-flex-start ${Styles.Navbar} ${Styles.Navbar_mobile}`}
+    >
       <div
         className={`col-md-5 ${Styles.NavLogo} ${
           router.pathname === "/" ? `${Styles.Navcol}` : ""

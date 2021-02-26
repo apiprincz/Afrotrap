@@ -13,10 +13,11 @@
   /* margin-right: 10px; */
 }
 
-.Social {
-}
 .NavLogo {
   background: transparent;
+}
+.NavLogo img {
+  width: 36%;
 }
 .Navcol {
   background: #ee9292;
@@ -114,6 +115,9 @@
   }
   .NavLogo {
     padding: 10px 0px 0px 40px;
+  }
+  .NavLogo img {
+    width: 36%;
   }
   .innerContainer {
     height: 100%;

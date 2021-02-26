@@ -1,0 +1,9 @@
+.Logo img {
+  width: 12%;
+}
+
+@media only screen and (max-width: 760px) {
+  .Logo img {
+    width: 100%;
+  }
+}
